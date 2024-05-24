@@ -8087,24 +8087,24 @@ static struct snd_soc_card *populate_snd_card_dailinks(struct device *dev)
 				}
 #else
 
-				if (get_hw_version_platform() == HARDWARE_PLATFORM_PICASSO) {
-					memcpy(msm_kona_dai_links + total_links,
-						sec_mi2s_rx_tfa9874_be_dai_links,
-						sizeof(sec_mi2s_rx_tfa9874_be_dai_links));
-					total_links += ARRAY_SIZE(sec_mi2s_rx_tfa9874_be_dai_links);
-				}
-				if (get_hw_version_platform() == HARDWARE_PLATFORM_MONET) {
-				    memcpy(msm_kona_dai_links + total_links,
-					    sec_mi2s_rx_cs35l41_dai_links,
-					    sizeof(sec_mi2s_rx_cs35l41_dai_links));
-				    total_links += ARRAY_SIZE(sec_mi2s_rx_cs35l41_dai_links);
-				}
-				if (get_hw_version_platform() == HARDWARE_PLATFORM_VANGOGH) {
-				    memcpy(msm_kona_dai_links + total_links,
-					    sec_mi2s_rx_cs35l41_dai_links,
-					    sizeof(sec_mi2s_rx_cs35l41_dai_links));
-				    total_links += ARRAY_SIZE(sec_mi2s_rx_cs35l41_dai_links);
-				}
+				// if (get_hw_version_platform() == HARDWARE_PLATFORM_PICASSO) {
+				// 	memcpy(msm_kona_dai_links + total_links,
+				// 		sec_mi2s_rx_tfa9874_be_dai_links,
+				// 		sizeof(sec_mi2s_rx_tfa9874_be_dai_links));
+				// 	total_links += ARRAY_SIZE(sec_mi2s_rx_tfa9874_be_dai_links);
+				// }
+				// if (get_hw_version_platform() == HARDWARE_PLATFORM_MONET) {
+				//     memcpy(msm_kona_dai_links + total_links,
+				// 	    sec_mi2s_rx_cs35l41_dai_links,
+				// 	    sizeof(sec_mi2s_rx_cs35l41_dai_links));
+				//     total_links += ARRAY_SIZE(sec_mi2s_rx_cs35l41_dai_links);
+				// }
+				// if (get_hw_version_platform() == HARDWARE_PLATFORM_VANGOGH) {
+				//     memcpy(msm_kona_dai_links + total_links,
+				// 	    sec_mi2s_rx_cs35l41_dai_links,
+				// 	    sizeof(sec_mi2s_rx_cs35l41_dai_links));
+				//     total_links += ARRAY_SIZE(sec_mi2s_rx_cs35l41_dai_links);
+				// }
 #endif
 			}
 		}
